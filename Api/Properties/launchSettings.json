@@ -1,0 +1,23 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "Api": {
+      "commandName": "Project",
+      "workingDirectory": "D:\\VS\\ProjectRPG\\CardGame\\Api",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:61022"
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:25288",
+      "sslPort": 44305
+    }
+  }
+}

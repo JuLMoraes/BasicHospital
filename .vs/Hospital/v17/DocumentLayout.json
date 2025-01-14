@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\VS\\hospital\\Hospital\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01CA64B8-BA03-45CF-BCDD-9AC9770B4ABC}|Infra\\Infra.csproj|d:\\vs\\hospital\\hospital\\infra\\repositories\\pacienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01CA64B8-BA03-45CF-BCDD-9AC9770B4ABC}|Infra\\Infra.csproj|solutionrelative:infra\\repositories\\pacienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01CA64B8-BA03-45CF-BCDD-9AC9770B4ABC}|Infra\\Infra.csproj|d:\\vs\\hospital\\hospital\\infra\\repositories\\consultarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01CA64B8-BA03-45CF-BCDD-9AC9770B4ABC}|Infra\\Infra.csproj|solutionrelative:infra\\repositories\\consultarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2729EF9-59ED-4A1B-AE91-C3C3C28F4413}|Domain.Core\\Domain.Core.csproj|d:\\vs\\hospital\\hospital\\domain.core\\handlers\\agendamento\\getconsultascommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2729EF9-59ED-4A1B-AE91-C3C3C28F4413}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\handlers\\agendamento\\getconsultascommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5CE1236-4566-4246-A057-893C704240EE}|Api\\Api.csproj|d:\\vs\\hospital\\hospital\\api\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5CE1236-4566-4246-A057-893C704240EE}|Api\\Api.csproj|solutionrelative:api\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01CA64B8-BA03-45CF-BCDD-9AC9770B4ABC}|Infra\\Infra.csproj|d:\\vs\\hospital\\hospital\\infra\\repositories\\base\\baserepositorydapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01CA64B8-BA03-45CF-BCDD-9AC9770B4ABC}|Infra\\Infra.csproj|solutionrelative:infra\\repositories\\base\\baserepositorydapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2729EF9-59ED-4A1B-AE91-C3C3C28F4413}|Domain.Core\\Domain.Core.csproj|d:\\vs\\hospital\\hospital\\domain.core\\handlers\\agendamento\\getconsultacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2729EF9-59ED-4A1B-AE91-C3C3C28F4413}|Domain.Core\\Domain.Core.csproj|solutionrelative:domain.core\\handlers\\agendamento\\getconsultacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5CE1236-4566-4246-A057-893C704240EE}|Api\\Api.csproj|d:\\vs\\hospital\\hospital\\api\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5CE1236-4566-4246-A057-893C704240EE}|Api\\Api.csproj|solutionrelative:api\\controllers\\agendamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5CE1236-4566-4246-A057-893C704240EE}|Api\\Api.csproj|d:\\vs\\hospital\\hospital\\api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5CE1236-4566-4246-A057-893C704240EE}|Api\\Api.csproj|solutionrelative:api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 547,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\VS\\hospital\\Hospital\\Api\\Startup.cs",
+              "RelativeDocumentMoniker": "Api\\Startup.cs",
+              "ToolTip": "D:\\VS\\hospital\\Hospital\\Api\\Startup.cs",
+              "RelativeToolTip": "Api\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T23:48:14.945Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "D:\\VS\\hospital\\Hospital\\Api\\Controllers\\PacienteController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\PacienteController.cs",
+              "ToolTip": "D:\\VS\\hospital\\Hospital\\Api\\Controllers\\PacienteController.cs",
+              "RelativeToolTip": "Api\\Controllers\\PacienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:06:56.23Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PacienteRepository.cs",
+              "DocumentMoniker": "D:\\VS\\hospital\\Hospital\\Infra\\Repositories\\PacienteRepository.cs",
+              "RelativeDocumentMoniker": "Infra\\Repositories\\PacienteRepository.cs",
+              "ToolTip": "D:\\VS\\hospital\\Hospital\\Infra\\Repositories\\PacienteRepository.cs",
+              "RelativeToolTip": "Infra\\Repositories\\PacienteRepository.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:52:15.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsultaRepository.cs",
+              "DocumentMoniker": "D:\\VS\\hospital\\Hospital\\Infra\\Repositories\\ConsultaRepository.cs",
+              "RelativeDocumentMoniker": "Infra\\Repositories\\ConsultaRepository.cs",
+              "ToolTip": "D:\\VS\\hospital\\Hospital\\Infra\\Repositories\\ConsultaRepository.cs",
+              "RelativeToolTip": "Infra\\Repositories\\ConsultaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:51:40.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetConsultasCommandHandler.cs",
+              "DocumentMoniker": "D:\\VS\\hospital\\Hospital\\Domain.Core\\Handlers\\Agendamento\\GetConsultasCommandHandler.cs",
+              "RelativeDocumentMoniker": "Domain.Core\\Handlers\\Agendamento\\GetConsultasCommandHandler.cs",
+              "ToolTip": "D:\\VS\\hospital\\Hospital\\Domain.Core\\Handlers\\Agendamento\\GetConsultasCommandHandler.cs",
+              "RelativeToolTip": "Domain.Core\\Handlers\\Agendamento\\GetConsultasCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:49:29.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseRepositoryDapper.cs",
+              "DocumentMoniker": "D:\\VS\\hospital\\Hospital\\Infra\\Repositories\\Base\\BaseRepositoryDapper.cs",
+              "RelativeDocumentMoniker": "Infra\\Repositories\\Base\\BaseRepositoryDapper.cs",
+              "ToolTip": "D:\\VS\\hospital\\Hospital\\Infra\\Repositories\\Base\\BaseRepositoryDapper.cs",
+              "RelativeToolTip": "Infra\\Repositories\\Base\\BaseRepositoryDapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:44:48.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetConsultaCommandHandler.cs",
+              "DocumentMoniker": "D:\\VS\\hospital\\Hospital\\Domain.Core\\Handlers\\Agendamento\\GetConsultaCommandHandler.cs",
+              "RelativeDocumentMoniker": "Domain.Core\\Handlers\\Agendamento\\GetConsultaCommandHandler.cs",
+              "ToolTip": "D:\\VS\\hospital\\Hospital\\Domain.Core\\Handlers\\Agendamento\\GetConsultaCommandHandler.cs",
+              "RelativeToolTip": "Domain.Core\\Handlers\\Agendamento\\GetConsultaCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:40:03.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AgendamentoController.cs",
+              "DocumentMoniker": "D:\\VS\\hospital\\Hospital\\Api\\Controllers\\AgendamentoController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\AgendamentoController.cs",
+              "ToolTip": "D:\\VS\\hospital\\Hospital\\Api\\Controllers\\AgendamentoController.cs",
+              "RelativeToolTip": "Api\\Controllers\\AgendamentoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T17:37:12.345Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
