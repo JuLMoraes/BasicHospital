@@ -3,7 +3,7 @@ using System;
 
 namespace Domain.Core.Entities
 {
-    public class ConsultaEntity : BaseAuditEntity
+    public class Consulta : BaseAuditEntity
     {
         public int PacienteId { get; set; }
         public int FuncionarioId { get; set; }

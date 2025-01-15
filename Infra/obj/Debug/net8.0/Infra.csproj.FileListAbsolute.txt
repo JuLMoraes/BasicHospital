@@ -49,3 +49,4 @@ D:\VS\hospital\Hospital\Infra\obj\Debug\net8.0\Infra.dll
 D:\VS\hospital\Hospital\Infra\obj\Debug\net8.0\refint\Infra.dll
 D:\VS\hospital\Hospital\Infra\obj\Debug\net8.0\Infra.pdb
 D:\VS\hospital\Hospital\Infra\obj\Debug\net8.0\ref\Infra.dll
+D:\VS\hospital\Hospital\Infra\obj\Debug\net8.0\Infra.sourcelink.json

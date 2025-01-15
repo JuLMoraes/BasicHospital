@@ -7,6 +7,6 @@ namespace Domain.Core.Commands.Agendamento
     {
         public DateTime Data { get; set; }
         public string Descricao { get; set; }
-        public PacienteEntity Paciente { get; set; }
+        public Entities.Paciente Paciente { get; set; }
     }
 }

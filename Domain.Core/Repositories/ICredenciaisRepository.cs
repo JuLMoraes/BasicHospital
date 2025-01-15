@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Core.Repositories
 {
-    public interface ICredenciaisRepository : IBaseRepository<CredenciaisEntity>
+    public interface ICredenciaisRepository : IBaseRepository<Credencial>
     {
-        public Task<CredenciaisEntity> GetByLogin(string user, string pass);
+        public Task<Credencial> GetByLogin(string user, string pass);
     }
 }

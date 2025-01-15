@@ -9,20 +9,13 @@ using System.Threading.Tasks;
 
 namespace Infra.Repositories
 {
-    public class PacienteRepository : BaseRepository<PacienteEntity>, IPacienteRepository
+    public class PacienteRepository : BaseRepository<Paciente>, IPacienteRepository
     {
         public PacienteRepository(DbContext aSeaContext, IUnityOfWork unityOfWork) : base(aSeaContext, unityOfWork)
         {
         }
 
-        public async Task<PacienteEntity> GetById(int id)
-        {
-            string query = @"SELECT * FROM Paciente WHERE Id = @id";
-            var retorno = await _context.Dapper.QueryAsync<PacienteEntity>(query, new { id });
-            return retorno.FirstOrDefault();
-        }
-
-        public async Task<int> Cadastro(PacienteEntity command)
+        public async Task<int> Cadastro(Paciente command)
         {
             string query = @"
                 INSERT INTO Paciente (Nome, Nascimento, TipoSanguineo, Sexo, PlanoSaude, TelefoneCelular, Email, Logradouro, Numero, Complemento, 
@@ -31,11 +24,11 @@ namespace Infra.Repositories
                 VALUES (@Nome, @Nascimento, @Sangue, @Sexo, @PlanoSaude, @TelefoneCelular, @Email, @Logradouro, @Numero, @Complemento, 
                     @Cidade, @Estado, @CEP, GETDATE(), GETDATE(), 1)
             ";
-            var retorno = await _context.Dapper.QueryAsync<PacienteEntity>(query, new 
+            var retorno = await _context.Dapper.QueryAsync<Paciente>(query, new 
             { 
                 command.Nome,
                 command.Nascimento,
-                command.Sangue,
+                command.TipoSanguineo,
                 command.Sexo,
                 command.PlanoSaude,
                 command.TelefoneCelular,
@@ -50,7 +43,7 @@ namespace Infra.Repositories
             return retorno.FirstOrDefault().Id;
         }
 
-        public async Task<PacienteEntity> Update(UpdatePacienteCommand command)
+        public async Task<Paciente> Update(UpdatePacienteCommand command)
         {
             string query = @"
                 UPDATE Paciente SET Nome = @Nome, Nascimento = @Nascimento, TipoSanguineo = @Sangue, Sexo = @Sexo, PlanoSaude = @PlanoSaude, 
@@ -60,7 +53,7 @@ namespace Infra.Repositories
 
                 SELECT * FROM Paciente WHERE Id = @Id
             ";
-            var retorno = await _context.Dapper.QueryAsync<PacienteEntity>(query, new
+            var retorno = await _context.Dapper.QueryAsync<Paciente>(query, new
             {
                 command.Id,
                 command.Nome,

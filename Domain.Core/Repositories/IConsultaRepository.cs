@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Core.Repositories
 {
-    public interface IConsultaRepository : IBaseRepository<ConsultaEntity>
+    public interface IConsultaRepository : IBaseRepository<Consulta>
     {
-        Task<ConsultaEntity> Get(int id);
-        Task<List<ConsultaEntity>> GetList(int funcionarioId);
-        Task Adicionar(ConsultaEntity entity);
+        Task<Consulta> Get(int id);
+        Task<List<Consulta>> GetList(int funcionarioId);
+        Task Adicionar(Consulta entity);
     }
 }

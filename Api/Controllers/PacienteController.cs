@@ -16,7 +16,7 @@ namespace Api.Controllers
     {
         [HttpGet]
         [Route("/obter")]
-        public async Task<PacienteEntity> Get(GetPacienteCommand command)
+        public async Task<Paciente> Get([FromQuery]GetPacienteCommand command)
         {
             var result = await getPacienteCommandHandler.Handle(command);
             return result;
@@ -31,7 +31,7 @@ namespace Api.Controllers
 
         [HttpPut]
         [Route("/editar")]
-        public async Task<PacienteEntity> Editar(UpdatePacienteCommand command)
+        public async Task<Paciente> Editar(UpdatePacienteCommand command)
         {
             var result = await updatePacienteCommandHandler.Handle(command);
             return result;

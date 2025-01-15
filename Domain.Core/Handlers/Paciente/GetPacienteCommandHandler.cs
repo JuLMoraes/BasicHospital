@@ -1,7 +1,7 @@
 ﻿using Domain.Core.Commands.Paciente;
-using Domain.Core.Entities;
 using Domain.Core.Repositories;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Domain.Core.Handlers.Paciente
@@ -12,7 +12,7 @@ namespace Domain.Core.Handlers.Paciente
         IPacienteRepository pacienteRepository
         )
     {
-        public async Task<PacienteEntity> Handle(GetPacienteCommand command)
+        public async Task<Entities.Paciente> Handle(GetPacienteCommand command)
         {
             var credenciais = await credenciaisRepository.GetByLogin(command.user, command.pass);
             if (credenciais == null) throw new Exception("Login incorreto");
@@ -20,8 +20,8 @@ namespace Domain.Core.Handlers.Paciente
             var funcionario = await funcionariosRepository.Get(credenciais.FuncionarioId);
             if (funcionario == null) throw new Exception("Não existe funcionario relacionado ao Login");
 
-            var paciente = await pacienteRepository.GetById(command.Id);
-            return paciente;
+            var pacientes = await pacienteRepository.GetAll(x => x.Id == command.Id);
+            return pacientes.FirstOrDefault() ;
         }
     }
 }

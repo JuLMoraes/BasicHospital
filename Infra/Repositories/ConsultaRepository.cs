@@ -9,26 +9,26 @@ using System.Threading.Tasks;
 
 namespace Infra.Repositories
 {
-    public class ConsultaRepository : BaseRepository<ConsultaEntity>, IConsultaRepository
+    public class ConsultaRepository : BaseRepository<Consulta>, IConsultaRepository
     {
         public ConsultaRepository(DbContext aSeaContext, IUnityOfWork unityOfWork) : base(aSeaContext, unityOfWork)
         {
         }
 
-        public async Task<ConsultaEntity> Get(int id)
+        public async Task<Consulta> Get(int id)
         {
             string query = @"SELECT * FROM Consulta WHERE Id = @id";
-            var result = await _context.Dapper.QueryAsync<ConsultaEntity>(query, new { id });
+            var result = await _context.Dapper.QueryAsync<Consulta>(query, new { id });
             return result.FirstOrDefault();
         }
 
-        public async Task<List<ConsultaEntity>> GetList(int funcionarioId)
+        public async Task<List<Consulta>> GetList(int funcionarioId)
         {
             string query = @"SELECT * FROM Consulta WHERE FuncionarioId = @funcionarioId";
-            var consultas = await _context.Dapper.QueryAsync<ConsultaEntity>(query, new { funcionarioId });
+            var consultas = await _context.Dapper.QueryAsync<Consulta>(query, new { funcionarioId });
             return consultas.ToList();
         }
-        public async Task Adicionar(ConsultaEntity entity)
+        public async Task Adicionar(Consulta entity)
         {
             string query = @"
                 INSERT INTO Consulta (PacienteId, FuncionarioId, Data, Descricao, Cadastro, Modificacao, Ativo)

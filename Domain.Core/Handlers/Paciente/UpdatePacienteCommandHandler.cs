@@ -12,7 +12,7 @@ namespace Domain.Core.Handlers.Paciente
         IPacienteRepository pacienteRepository
         )
     {
-        public async Task<PacienteEntity> Handle(UpdatePacienteCommand command)
+        public async Task<Entities.Paciente> Handle(UpdatePacienteCommand command)
         {
             var credenciais = await credenciaisRepository.GetByLogin(command.user, command.pass);
             if (credenciais == null) throw new Exception("Login incorreto");

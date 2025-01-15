@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Core.Repositories
 {
-    public interface IFuncionariosRepository : IBaseRepository<FuncionarioEntity>
+    public interface IFuncionariosRepository : IBaseRepository<Funcionario>
     {
-        Task<FuncionarioEntity> Get(int Id);
+        Task<Funcionario> Get(int Id);
     }
 }

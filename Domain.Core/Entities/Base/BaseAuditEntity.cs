@@ -6,6 +6,5 @@ namespace Domain.Core.Entities.Base
     {
         public DateTime Cadastro { get; set; }
         public DateTime Modificacao { get; set; }
-        public bool Ativo { get; set; }
     }
 }

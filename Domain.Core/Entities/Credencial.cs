@@ -2,7 +2,7 @@
 
 namespace Domain.Core.Entities
 {
-    public class CredenciaisEntity : BaseEntity
+    public class Credencial : BaseEntity
     {
         public int FuncionarioId { get; set; }
         public int GrupoAcesso { get; set; }

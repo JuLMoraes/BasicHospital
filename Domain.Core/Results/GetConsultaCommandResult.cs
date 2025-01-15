@@ -11,7 +11,7 @@ namespace Domain.Core.Results
         public DateTime Cadastro { get; set; }
         public DateTime Modificacao { get; set; }
         public bool Ativo { get; set; }
-        public PacienteEntity Paciente { get; set; }
-        public FuncionarioEntity Funcionario { get; set; }
+        public Paciente Paciente { get; set; }
+        public Funcionario Funcionario { get; set; }
     }
 }

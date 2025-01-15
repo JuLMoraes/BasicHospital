@@ -21,11 +21,11 @@ namespace Domain.Core.Handlers.Paciente
             var funcionario = await funcionariosRepository.Get(credenciais.FuncionarioId);
             if (funcionario == null) throw new Exception("Não existe funcionario relacionado ao Login");
 
-            var entity = new PacienteEntity()
+            var entity = new Entities.Paciente()
             {
                 Nome = command.Nome,
                 Nascimento = command.Nascimento,
-                Sangue = command.Sangue,
+                TipoSanguineo = command.Sangue,
                 Sexo = command.Sexo,
                 PlanoSaude = command.PlanoSaude,
                 TelefoneCelular = command.TelefoneCelular,

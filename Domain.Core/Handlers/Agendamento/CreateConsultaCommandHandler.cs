@@ -26,7 +26,7 @@ namespace Domain.Core.Handlers.Agendamento
             int pacienteId = command.Paciente.Id;
             if (pacienteId == 0) pacienteId = await pacienteRepository.Cadastro(command.Paciente);
 
-            var entity = new ConsultaEntity() 
+            var entity = new Consulta() 
             {
                 Descricao = command.Descricao,
                 PacienteId = pacienteId,

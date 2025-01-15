@@ -4,11 +4,11 @@ using Domain.Core.Entities.Base;
 
 namespace Domain.Core.Entities
 {
-    public class PacienteEntity : BaseAuditEntity
+    public class Paciente : BaseAuditEntity
     {
         public string Nome { get; set; }
         public DateTime Nascimento { get; set; }
-        public TipoSanguineoTypeEnum? Sangue { get; set; }
+        public TipoSanguineoTypeEnum? TipoSanguineo { get; set; }
         public int Sexo { get; set; }
         public string PlanoSaude { get; set; }
         public string TelefoneCelular { get; set; }

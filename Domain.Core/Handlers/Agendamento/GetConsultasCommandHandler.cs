@@ -4,6 +4,7 @@ using Domain.Core.Repositories;
 using Domain.Core.Results;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Domain.Core.Handlers.Agendamento
@@ -33,7 +34,7 @@ namespace Domain.Core.Handlers.Agendamento
                     Id = consulta.Id,
                     Data = consulta.Data,
                     Descricao = consulta.Descricao,
-                    Paciente = await pacienteRepository.GetById(consulta.PacienteId),
+                    Paciente = pacienteRepository.GetAll(x => x.Id == consulta.PacienteId).Result.FirstOrDefault(),
                     Funcionario = funcionario,
                     Cadastro = consulta.Cadastro,
                 };

@@ -3,6 +3,7 @@ using Domain.Core.Enums;
 using Domain.Core.Repositories;
 using Domain.Core.Results;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Domain.Core.Handlers.Agendamento
@@ -23,14 +24,14 @@ namespace Domain.Core.Handlers.Agendamento
             if (funcionario == null) throw new Exception("Não existe funcionario relacionado ao Login");
             if (funcionario.TipoFuncionario != FuncionarioTypeEnum.Medico) throw new Exception("Este funcionario não tem permissão para consultar agendamentos");
 
-            var consulta = await consultaRepository.Get(command.Id);
+            var consulta = consultaRepository.GetAll(x => x.Id == command.Id).Result.FirstOrDefault();
             if (consulta.FuncionarioId != funcionario.Id) throw new Exception("Este usuário não tem permissão para vizualizar essa consulta");
             var objRetorno = new GetConsultaCommandResult()
             {
                 Id = consulta.Id,
                 Data = consulta.Data,
                 Descricao = consulta.Descricao,
-                Paciente = await pacienteRepository.GetById(consulta.PacienteId),
+                Paciente = pacienteRepository.GetAll(x => x.Id == consulta.PacienteId).Result.FirstOrDefault(),
                 Funcionario = funcionario,
                 Cadastro = consulta.Cadastro,
                 Modificacao = consulta.Modificacao,

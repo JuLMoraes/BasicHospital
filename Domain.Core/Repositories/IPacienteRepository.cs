@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace Domain.Core.Repositories
 {
-    public interface IPacienteRepository : IBaseRepository<PacienteEntity>
+    public interface IPacienteRepository : IBaseRepository<Paciente>
     {
-        Task<PacienteEntity> GetById(int id);
-        Task<int> Cadastro(PacienteEntity command);
-        Task<PacienteEntity> Update(UpdatePacienteCommand command);
+        Task<int> Cadastro(Paciente command);
+        Task<Paciente> Update(UpdatePacienteCommand command);
     }
 }

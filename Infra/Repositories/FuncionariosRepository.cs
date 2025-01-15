@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace Infra.Repositories
 {
-    public class FuncionariosRepository : BaseRepository<FuncionarioEntity>, IFuncionariosRepository
+    public class FuncionariosRepository : BaseRepository<Funcionario>, IFuncionariosRepository
     {
         public FuncionariosRepository(DbContext aSeaContext, IUnityOfWork unityOfWork) : base(aSeaContext, unityOfWork)
         {
         }
 
-        public async Task<FuncionarioEntity> Get(int id)
+        public async Task<Funcionario> Get(int id)
         {
             string query = @"SELECT * FROM Funcionario WHERE Id = @id AND Ativo = 1";
-            var retorno = await _context.Dapper.QueryAsync<FuncionarioEntity>(query, new { id });
+            var retorno = await _context.Dapper.QueryAsync<Funcionario>(query, new { id });
             return retorno.FirstOrDefault();
         }
     }

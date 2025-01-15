@@ -250,3 +250,4 @@ D:\VS\hospital\Hospital\Api\obj\Debug\net8.0\refint\Api.dll
 D:\VS\hospital\Hospital\Api\obj\Debug\net8.0\Api.pdb
 D:\VS\hospital\Hospital\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 D:\VS\hospital\Hospital\Api\obj\Debug\net8.0\ref\Api.dll
+D:\VS\hospital\Hospital\Api\obj\Debug\net8.0\Api.sourcelink.json
